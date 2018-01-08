@@ -2,7 +2,7 @@ var api = require('../api'),
     path = require('path');
 
 module.exports  = function(app) {
-    
+
     app.route('/v1/fotos')
         .post(api.adiciona)
         .get(api.lista);
@@ -14,4 +14,6 @@ module.exports  = function(app) {
 
     app.get('/v1/grupos', api.listaGrupos)
     app.get('/v1/fotos/grupo/:grupoId', api.listaPorGrupo);
+
+    app.get('/teste', api.testa);
 };
