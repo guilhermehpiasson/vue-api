@@ -78,7 +78,7 @@ api.listaGrupos = function(req, res) {
 api.testa = function(req, res) {
 
   console.log('teste ok');
-  res.status(200).end();
+  res.status(200).json("OK");
 
 };
 
